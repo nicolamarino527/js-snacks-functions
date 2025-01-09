@@ -5,7 +5,19 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui.
 
-function estraiIniziali() {
+// function estraiIniziali() {
+
+//     let iniziali = [];
+
+//     for (let i = 0; i < names.length; i++){
+//         let iniziale = names[i].charAt(0);
+//         iniziali.push(iniziale);
+//     }
+
+//     return iniziali
+// }
+
+const estraiIniziali = () => {
 
     let iniziali = [];
 
@@ -13,7 +25,6 @@ function estraiIniziali() {
         let iniziale = names[i].charAt(0);
         iniziali.push(iniziale);
     }
-
     return iniziali
 }
 
