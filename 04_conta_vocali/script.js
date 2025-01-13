@@ -7,15 +7,20 @@ const word = 'javascript';
 
 function trovaVocali(parola) {
     
+    // Scriviamo la funzione che ci conta le vocali
     function contaVocali(stringa) {
        
+        // Definiamo le costanti
         const vocali = ['a', 'e', 'i', 'o', 'u'];
         let conteggio = 0;
     
+        // Convertimo la stringa onnminuscolo per evitare problemi
         stringa = stringa.toLowerCase();
     
+        // Verifichiamo che l elemento stringa include elementi dell' array vocali
         for (let i = 0; i < stringa.length; i++) {
            
+            // se include elemeti allora aumenta il conteggio
             if (vocali.includes(stringa[i])) {
                 conteggio++;
             }
@@ -23,6 +28,7 @@ function trovaVocali(parola) {
     
         return conteggio;
     }
+    
     return contaVocali(parola);
 }
 
